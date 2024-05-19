@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bakbak One", "Inter";
+}
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 14vmin;
+  background-color: white;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  position: relative;
+  /* justify-content: space-between;  */
+  box-shadow: 1px 1px 10px black; 
+  z-index: 100;
+}
+.nav-icon img {
+  height: 7vmin;
+  width: 11vmin;
+  margin-left: 1rem;
+
+
+}
+
+.content {
+  font-weight: 600;
+  font-size: 6vmin;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/* .notify {
+  text-align: center;
+} */
+/* .notify img {
+  height: 7vmin;
+  width: 9vmax;
+} */
+/* 
+.nav-bar .notify {
+  margin-right: 1rem;
+} */
