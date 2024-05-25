@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bakbak One", "Inter";
+  background-color: #eee;
+}
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 14vmin;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 100;
+}
+.nav-icon img {
+  cursor: pointer;
+  height: 6vmin;
+  width: 10vmin;
+  margin-left: 1rem;
+}
+
+.home {
+  font-weight: 600;
+  font-size: 6vmin;
+  visibility: visible;
+}
+
+.m-container>ul {
+    border-radius: 10px;
+    padding: 1em;
+    width: 40vw;
+    background-color: black;
+    list-style: none;
+  }
+  .m-container>ul>li {
+    padding: 1em 0; /* Adjust padding for better spacing */
+    width: 100%;
+    border-bottom: none; /* No border initially */
+    position: relative;
+
+  }
+  .m-container>ul a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between text and arrow */
+  }
+  .m-container>ul li.hidden {
+    display: none;
+  }
+.m-container>ul  li.border-visible {
+    border-bottom: 1px solid white; /* Border when class is added */
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+  }
+  #arrL, #arrR {
+    height: 12px;
+    width: 2px;
+    background: white;
+    margin:3px;
+  }
+  #arrL {
+    transform: rotate(-45deg);
+  }
+  #arrR {
+    transform: rotate(45deg);
+  }
+
+.c-container{
+  margin-top: 1.5em;
+  display: block;
+}
+.c-container>a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex: column;
+  border-bottom: 1px solid grey;
+  padding: 1em;
+}
+
+.m-container{
+    position: relative;
+    top: 17vmin;
+}
+.m-container>ul,.m-container>ul>li,.arrow{
+    background-color: black;
+}
