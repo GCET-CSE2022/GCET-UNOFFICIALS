@@ -30,3 +30,60 @@
   font-size: 6vmin;
   visibility: visible;
 }
+
+.menu-container>ul {
+    border-radius: 10px;
+    padding: 1em;
+    width: 40vw;
+    background-color: black;
+    list-style: none;
+  }
+  .menu-container>ul>li {
+    padding: 1em 0; /* Adjust padding for better spacing */
+    width: 100%;
+    border-bottom: none; /* No border initially */
+    position: relative;
+  }
+  .menu-container>ul a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between text and arrow */
+  }
+  .menu-container>ul li.hidden {
+    display: none;
+  }
+.menu-container>ul  li.border-visible {
+    border-bottom: 1px solid white; /* Border when class is added */
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+  }
+  #arrL, #arrR {
+    height: 12px;
+    width: 2px;
+    background: white;
+    margin:3px;
+  }
+  #arrL {
+    transform: rotate(-45deg);
+  }
+  #arrR {
+    transform: rotate(45deg);
+  }
+
+.content-container{
+  margin-top: 1.5em;
+  display: block;
+}
+.content-container>a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex: column;
+  border-bottom: 1px solid grey;
+  padding: 1em;
+}
