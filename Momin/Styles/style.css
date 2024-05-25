@@ -31,30 +31,32 @@
   visibility: visible;
 }
 
-.menu-container>ul {
+.m-container>ul {
     border-radius: 10px;
     padding: 1em;
     width: 40vw;
     background-color: black;
     list-style: none;
   }
-  .menu-container>ul>li {
+  .m-container>ul>li {
     padding: 1em 0; /* Adjust padding for better spacing */
     width: 100%;
     border-bottom: none; /* No border initially */
     position: relative;
+
   }
-  .menu-container>ul a {
+  .m-container>ul a {
+    background-color: black;
     color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribute space between text and arrow */
   }
-  .menu-container>ul li.hidden {
+  .m-container>ul li.hidden {
     display: none;
   }
-.menu-container>ul  li.border-visible {
+.m-container>ul  li.border-visible {
     border-bottom: 1px solid white; /* Border when class is added */
   }
   .arrow {
@@ -75,15 +77,23 @@
     transform: rotate(45deg);
   }
 
-.content-container{
+.c-container{
   margin-top: 1.5em;
   display: block;
 }
-.content-container>a{
+.c-container>a{
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   flex: column;
   border-bottom: 1px solid grey;
   padding: 1em;
+}
+
+.m-container{
+    position: relative;
+    top: 17vmin;
+}
+.m-container>ul,.m-container>ul>li,.arrow{
+    background-color: black;
 }
