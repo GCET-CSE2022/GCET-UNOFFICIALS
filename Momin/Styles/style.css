@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bakbak One", "Inter";
+  background-color: #eee;
+}
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 14vmin;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 100;
+}
+.nav-icon img {
+  cursor: pointer;
+  height: 6vmin;
+  width: 10vmin;
+  margin-left: 1rem;
+}
+
+.home {
+  font-weight: 600;
+  font-size: 6vmin;
+  visibility: visible;
+}
